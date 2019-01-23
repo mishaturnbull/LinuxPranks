@@ -4,3 +4,5 @@ Forkbomb,           scripts/forkbomb.sh,             6/9,    False
 Block SO,           scripts/block_stackoverflow.sh,  5/3,    True
 Slowdown shell,     scripts/shell_slow.sh,           8/0,    False
 Password scare,     scripts/password_scare.sh,       8/0,    False
+Star Wars,          scripts/starwars.sh,             4/0,    False
+Make into Windows,  scripts/windows.sh,              6/0,    False
