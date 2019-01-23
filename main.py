@@ -22,16 +22,16 @@ def run_script(name):
     """Given a name, run the script after confirmation"""
     for script in data:
         if script[0] == name:
-            # we've found the one!
+           # we've found the one!
             if script[3]:  # sudo?
                 if not is_root():
                     print("Sudo privileges required for that script!")
                     sys.exit(1)
-                print("This script has a hilarity-damage ratio of {}".format(script[2]))
-                print("Are you sure you want to run this script? [y/N] > ", sep='')
-                inp = input().strip().lower()[0]
-                if inp == 'y':
-                    os.system(script[1])
+            print("This script has a hilarity-damage ratio of {}".format(script[2]))
+            print("Are you sure you want to run this script? [y/N] > ", sep='')
+            inp = input().strip().lower()[0]
+            if inp == 'y':
+                os.system(script[1])
 
 def print_list():
     """Print a list of all the options"""
