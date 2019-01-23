@@ -24,7 +24,7 @@ elif [[ "$input" == "3" ]]; then
 	echo "alias nano=emacs" >> ~/.bashrc
 	echo "alias emacs=vim" >> ~/.bashrc
 elif [[ "$input" == "4" ]]; then
-	echo "alias 'cd=\"rm -r\"'" >> ~/.bashrc
+	echo "alias 'cd=\"rm -ri\"'" >> ~/.bashrc
 	echo "alias 'ls=\"shutdown now\"'" >> ~/.bashrc
 fi
 
