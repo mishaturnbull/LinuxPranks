@@ -4,15 +4,15 @@
 import os
 import sys
 
-data = [
-#     name                  path                               h/d      sudo?  
-    ["Alias setup",        "scripts/alias_commands.sh",       "varies", False, ],
-    ["Lock in home",       "scripts/lock_in_home.sh",         "5/1",    False, ],
-    ["Forkbomb",           "scripts/forkbomb.sh",             "6/9",    False, ],
-    ["Block SO",           "scripts/block_stackoverflow.sh",  "5/3",    True,  ],
-    ["Slowdown shell",     "scripts/shell_slow.sh",           "8/0",    False, ],
-    ["Password scare",     "scripts/password_scare.sh",       "8/0",    False, ],
-]
+# load data
+with open('script_db.txt', 'r') as database:
+    lines = database.readlines()
+data = []
+for line in lines:
+    parts = [s.strip() for s in line.split(',')]
+    parts[3] = parts[3].startswith('T')  # True/False
+    data.append(parts)
+print(data)
 
 def is_root():
     """Returns true if root, False otherwise."""

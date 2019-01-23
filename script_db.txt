@@ -1,0 +1,6 @@
+Alias setup,        scripts/alias_commands.sh,       varies, False
+Lock in home,       scripts/lock_in_home.sh,         5/1,    False
+Forkbomb,           scripts/forkbomb.sh,             6/9,    False
+Block SO,           scripts/block_stackoverflow.sh,  5/3,    True
+Slowdown shell,     scripts/shell_slow.sh,           8/0,    False
+Password scare,     scripts/password_scare.sh,       8/0,    False
