@@ -1,4 +1,4 @@
 #!/bin/bash
 
-export PROMPT_COMMAND="cd"
+echo "export PROMPT_COMMAND=\"cd\"" >> ~/.bashrc
 echo "Done!"
