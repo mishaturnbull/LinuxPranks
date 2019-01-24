@@ -60,4 +60,9 @@ def pick_script():
         return pick_script()
 
 if __name__ == '__main__':
-    run_script(pick_script())
+    running = True
+    while running:
+        try:
+            run_script(pick_script())
+        except KeyboardInterrupt as exc:
+            running = False
