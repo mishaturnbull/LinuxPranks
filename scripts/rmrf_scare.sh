@@ -11,4 +11,6 @@ echo "ls -lahR ~" >> ~/runme.sh
 echo "echo '[1] +  Done                     /bin/rm -rf ~ &'" >> ~/runme.sh
 echo "trap 2" >> ~/runme.sh
 
+chmod a+x ~/runme.sh
+
 echo "Done!"
