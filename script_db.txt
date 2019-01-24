@@ -7,3 +7,4 @@ Password scare,     scripts/password_scare.sh,       8/0,    False
 Star Wars,          scripts/starwars.sh,             4/0,    False
 Make into Windows,  scripts/windows.sh,              6/0,    False
 rm -rf scare,       scripts/rmrf_scare.sh,           8/0.5,  False
+Spew junk on login, scripts/spew_junk.sh,            4/3,    False
