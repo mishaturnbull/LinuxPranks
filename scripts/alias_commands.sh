@@ -7,6 +7,7 @@ if [[ -z "$1" ]]; then
 	echo "  3 Evil (h/d=6/1)  [the classic editor swap]"
 	echo "  4 EVIL (h/d=8/3)"
 	echo "    (WARNING!  THIS IS POTENTIALLY HARMFUL!)"
+	echo "  5 Chaotic Neutral (h/d=8/1)"
 	read input
 else
 	input=$1
@@ -26,6 +27,19 @@ elif [[ "$input" == "3" ]]; then
 elif [[ "$input" == "4" ]]; then
 	echo "alias 'cd=\"rm -ri\"'" >> ~/.bashrc
 	echo "alias 'ls=\"shutdown now\"'" >> ~/.bashrc
+elif [[ "$input" == "5" ]]; then
+	echo "alias --='-'" >> ~/.bashrc
+	echo "alias cat='perl -l'" >> ~/.bashrc
+	echo "alias cd='cd .'" >> ~/.bashrc
+	echo "alias cp='echo cp'" >> ~/.bashrc
+	echo "alias exec='echo cannot fork '" >> ~/.bashrc
+	echo "alias exit=echo Are you sure?" >> ~/.bashrc
+	echo "alias kill=echo all dead" >> ~/.bashrc
+	echo "alias less='more ---x'" >> ~/.bashrc
+	echo "alias mv='echo stay'" >> ~/.bashrc
+	echo "alias pwd='echo You are here'" >> ~/.bashrc
+	echo "alias touch='echo please don\'t touch'" >> ~/.bashrc
+	echo "alias who='echo what?'" >> ~/.bashrc
 fi
 
 echo "Done!"
