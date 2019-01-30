@@ -1,0 +1,1 @@
+CD Ejector,          WindowsPranks/scripts/cd.vbs,    8/0, False
