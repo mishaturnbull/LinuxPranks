@@ -8,3 +8,4 @@ Star Wars,          LinuxPranks/scripts/starwars.sh,             4/0,    False
 Make into Windows,  LinuxPranks/scripts/windows.sh,              6/0,    False
 rm -rf scare,       LinuxPranks/scripts/rmrf_scare.sh,           8/0.5,  False
 Spew junk on login, LinuxPranks/scripts/spew_junk.sh,            4/3,    False
+gcc=bluescreen,     LinuxPranks/scripts/makebluescreen.sh,       6/2,    False
