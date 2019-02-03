@@ -38,7 +38,7 @@ def run_script(name, data):
 
 def print_list(data):
     """Print a list of all the options"""
-    print("#\tScript\tH/D\tRequires sudo/admin?")
+    print("# Script\t\tH/D\tRequires sudo/admin?")
     print("--------------------------------------")
     i = 0
     for script in data:
